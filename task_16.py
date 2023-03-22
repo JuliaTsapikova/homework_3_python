@@ -19,9 +19,9 @@ X = input("Введите целое число: ")
 count = 0
 i = 0
 for elem in range(len(list_A)):
-    if X[i] in list_A[elem]:
+    if X in list_A[elem]:
         count+=1
-print(f"Это число повторяется в массиве {count} раз")
+print(f"Это число встречается в массиве {count} раз")
 
 
 
