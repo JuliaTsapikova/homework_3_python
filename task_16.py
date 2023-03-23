@@ -10,16 +10,14 @@ N – количество элементов в массиве. В послед
     3
     -> 1"""
 
-from random import randint
 
 N = int(input("Введите число элементов массива: "))
-list_A = [input(f"Введите элемент массива {i} ") for i in range(N)]
+list_A = [int(input(f"Введите элемент массива {i} ")) for i in range(N)]
 print(list_A)
-X = input("Введите целое число: ")
+X = int(input("Введите целое число: "))
 count = 0
-i = 0
-for elem in range(len(list_A)):
-    if X in list_A[elem]:
+for i in range(len(list_A)):
+    if X == list_A[i]:
         count+=1
 print(f"Это число встречается в массиве {count} раз")
 
