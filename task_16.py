@@ -13,7 +13,7 @@ N – количество элементов в массиве. В послед
 from random import randint
 
 N = int(input("Введите число элементов массива: "))
-list_A = [input(f"Введите элемент массива {i} ") for i in range(1, N+1)]
+list_A = [input(f"Введите элемент массива {i} ") for i in range(N)]
 print(list_A)
 X = input("Введите целое число: ")
 count = 0
