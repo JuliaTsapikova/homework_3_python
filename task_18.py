@@ -12,20 +12,14 @@
     
 
 N = int(input("Введите число элементов массива: "))
-list_A = [i for i in range(1, N+1)]
-print(*list_A)
+list_A = [int(input(f"Введите элемент массива {i}: ")) for i in range(N)]
 X = int(input("Введите целое число: "))
-i = 0
-num = 0
-min = abs(list_A[0] - X)
-while i < N:
-    if (abs(list_A[i]) - X) < min:
-        min = abs(list_A[i] - X)
-    num = i
-    i+=1
-print(list_A[num])
 
-
+number=0
+for i in range(len(list_A)):
+    if (X-list_A[i])<X-number and X-list_A[i]>0:
+        number=i
+print(list_A[number])
     
 
 
